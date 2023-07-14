@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Check the docs
+    url: https://herd.laravel.com/docs
+    about: "This repository is for reporting bugs and proposing new features. If you need help with your first steps with Herd, check out the docs!"
+  - name: Security vulnerabilities
+    url: https://@beyondco.de
+    about: If you want to report a security issue, please contact our support.
