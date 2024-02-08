@@ -3,6 +3,9 @@ contact_links:
   - name: Feature request
     url: https://github.com/beyondcode/herd-community/discussions
     about: 'For ideas or feature requests, start a new discussion'
+  - name: Herd Pro
+    url: mailto:support@beyondco.de
+    about: 'For license and billing related questions, please send us an email at support@beyondco.de'
   - name: Check the docs
     url: https://herd.laravel.com/docs
     about: "This repository is for reporting bugs and proposing new features. If you need help with your first steps with Herd, check out the docs!"
