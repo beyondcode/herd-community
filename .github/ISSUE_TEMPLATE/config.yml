@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Herd Pro
-    url: support@beyondco.de
+    url: https://beyondcode.com
     about: 'For license and billing related questions, please send us an email to support@beyondco.de'
   - name: Feature request
     url: https://github.com/beyondcode/herd-community/discussions
