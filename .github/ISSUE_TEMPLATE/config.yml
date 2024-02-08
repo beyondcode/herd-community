@@ -1,8 +1,11 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Feature request
+    url: https://github.com/beyondcode/herd-community/discussions
+    about: 'For ideas or feature requests, start a new discussion'
   - name: Check the docs
     url: https://herd.laravel.com/docs
     about: "This repository is for reporting bugs and proposing new features. If you need help with your first steps with Herd, check out the docs!"
   - name: Security vulnerabilities
-    url: https://@beyondco.de
+    url: https://beyondcode.com
     about: If you want to report a security issue, please contact our support.
