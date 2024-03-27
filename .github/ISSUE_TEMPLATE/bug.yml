@@ -6,17 +6,28 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before opening a bug report, please search for the behaviour in the existing issues. 
+        Before opening a bug report, please search for the behaviour in the existing issues.
 
         ---
 
         Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: "Are you using macOS or Windows?"
+      options:
+        - macOS
+        - Windows
+    validations:
+      required: true
+
   - type: input
     id: os
     attributes:
       label: Operating system version
       description: "Which version of macOS or Windows are you using?"
-      placeholder: "macOS Ventura 13.3 | Windows 11"
+      placeholder: "macOS Sonoma 14.1.1 (23B81) | Windows 11 (23H2 22631.3296)"
     validations:
       required: true
   - type: dropdown
@@ -27,6 +38,7 @@ body:
       options:
         - Intel (x86)
         - ARM64 (M1, M2, etc)
+        - Windows
     validations:
       required: true
   - type: input

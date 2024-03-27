@@ -1,0 +1,17 @@
+numLabels: 100
+custom:
+  - location: body
+    keywords:
+      - 'windows'
+    labels:
+      - windows
+  - location: body
+    keywords:
+      - 'mac'
+    labels:
+      - macOS
+  - location: body
+    keywords:
+      - 'macOS'
+    labels:
+      - macOS
