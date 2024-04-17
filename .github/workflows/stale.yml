@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/stale@v9
         with:
-          any-of-labels: 'needs-more-information'
+          only-labels: 'needs-more-information'
           debug-only: true
           days-before-stale: 14
           days-before-close: 7
