@@ -12,7 +12,7 @@ jobs:
         with:
           only-labels: 'needs more information'
           debug-only: true
-          days-before-stale: 14
+          days-before-stale: 5
           days-before-close: 7
           
           
