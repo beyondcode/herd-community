@@ -22,7 +22,7 @@ jobs:
               issue_number: issue_num
             });
 
-            const labelsToRemove = ['needs more information', 'stale'];
+            const labelsToRemove = ['needs more information', 'stale', 'Stale'];
 
             for (const label of labelsToRemove) {
               if (issue.data.labels.some(issueLabel => issueLabel.name === label)) {
