@@ -15,22 +15,26 @@ jobs:
             const issue_num = context.issue.number;
             const owner = context.repo.owner;
             const repo = context.repo.repo;
+            const commentAuthor = context.payload.comment.user.login;
+
 
             const issue = await github.rest.issues.get({
               owner,
               repo,
               issue_number: issue_num
             });
-
-            const labelsToRemove = ['needs more information', 'stale', 'Stale'];
-
-            for (const label of labelsToRemove) {
-              if (issue.data.labels.some(issueLabel => issueLabel.name === label)) {
-                await github.rest.issues.removeLabel({
-                  issue_number: issue_num,
-                  owner,
-                  repo,
-                  name: label
-                });
+            
+            if (commentAuthor === issue.data.user.login) {
+              const labelsToRemove = ['needs more information', 'stale', 'Stale'];
+  
+              for (const label of labelsToRemove) {
+                if (issue.data.labels.some(issueLabel => issueLabel.name === label)) {
+                  await github.rest.issues.removeLabel({
+                    issue_number: issue_num,
+                    owner,
+                    repo,
+                    name: label
+                  });
+                }
               }
             }
